@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.epson.iprojection.ui.activities.presen.TouchControlFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_presen_grayout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="#0000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge"/>
+        <TextView android:layout_gravity="center" android:id="@+id/text_presen_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_NowLoading_"/>
+    </LinearLayout>
+</com.epson.iprojection.ui.activities.presen.TouchControlFrameLayout>

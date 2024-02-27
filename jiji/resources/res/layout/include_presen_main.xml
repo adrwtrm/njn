@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/BaseColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.epson.iprojection.ui.activities.presen.main_image.MatrixImageView android:id="@+id/img_presen_MainImage" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="2dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/btn_presen_seekStart" android:background="@drawable/ic_back" android:padding="4dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/icon_presen_start" android:scaleType="fitXY" android:contentDescription="@string/_EmptyMessage_"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/btn_presen_seekPrev" android:background="@drawable/ic_back" android:padding="4dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/icon_presen_prev" android:scaleType="fitXY" android:contentDescription="@string/_EmptyMessage_"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="24sp" android:textColor="@color/Font" android:gravity="center" android:id="@+id/txt_presen_progress" android:padding="4dp" android:layout_width="140dp" android:layout_height="wrap_content" android:text="" android:scrollHorizontally="true"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/btn_presen_seekNext" android:background="@drawable/ic_back" android:padding="4dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/icon_presen_next" android:scaleType="fitXY" android:contentDescription="@string/_EmptyMessage_"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/btn_presen_seekEnd" android:background="@drawable/ic_back" android:padding="4dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/icon_presen_end" android:scaleType="fitXY" android:contentDescription="@string/_EmptyMessage_"/>
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

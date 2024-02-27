@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewFlipper android:id="@+id/flipper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:layout_width="match_parent" android:layout_height="20dp"/>
+                <ImageButton android:id="@+id/btn_pjctl_power" android:background="@drawable/icon_power" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                <TextView android:textSize="18dp" android:textColor="@color/Black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/_Source_"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+                    <ImageButton android:id="@+id/btn_pjctl_pc" android:background="@drawable/icon_pc" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                    <ImageButton android:id="@+id/btn_pjctl_video" android:background="@drawable/icon_video" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                    <ImageButton android:id="@+id/btn_pjctl_lan" android:background="@drawable/icon_lan" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                </LinearLayout>
+                <TextView android:textSize="18dp" android:textColor="@color/Black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:text="@string/_Operation_"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+                    <ImageButton android:id="@+id/btn_pjctl_mute" android:background="@drawable/icon_mute" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                    <ImageButton android:id="@+id/btn_pjctl_freeze" android:background="@drawable/icon_freeze" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                    <ImageButton android:id="@+id/btn_pjctl_volumeminus" android:background="@drawable/icon_volumeminus" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                    <ImageButton android:id="@+id/btn_pjctl_volumeplus" android:background="@drawable/icon_volumeplus" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="0dp">
+                    <ImageButton android:id="@+id/btn_pjctl_qr" android:background="@drawable/icon_qr" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PjControlButton"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/main_conpj_pjcontrol_touchpad"/>
+    </ViewFlipper>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_deliver_edit" android:title="@string/_Edit_"/>
+    <item android:id="@+id/menu_presen_sort" android:title="@string/_Sort_"/>
+    <item android:id="@+id/menu_deliver_complete" android:title="@string/_Done_"/>
+    <item android:id="@+id/menu_deliver_selectall" android:title="@string/_SelectAll_"/>
+    <item android:id="@+id/menu_deliver_noselectall" android:title="@string/_DeselectAll_"/>
+</menu>

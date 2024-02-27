@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="15sp" android:textColor="@color/ListTitleFont" android:background="@color/ListTitleBack" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_HomePage_"/>
+    <ListView android:textColor="@color/Font" android:id="@+id/list_web_bkmk_iproid_startpage" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="15sp" android:textColor="@color/ListTitleFont" android:background="@color/ListTitleBack" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_Bookmarks_"/>
+    <ListView android:textColor="@color/ListFont" android:id="@+id/list_web_bkmk_iproid_toAndroid" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/ListLine" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ListView android:textColor="@color/ListFont" android:id="@+id/list_web_bkmk_iproid_bkmk" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/ListLine" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

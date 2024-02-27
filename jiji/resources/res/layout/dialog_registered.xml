@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="18dp">
+    <TextView android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/_RegisteredProjectorsMsg_"/>
+    <CheckBox android:id="@+id/check_nw_standby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:checked="true" android:text="@string/_ContinueUsingRemocon_"/>
+    <TextView android:textSize="12sp" android:id="@+id/text_nw_standby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="@string/_SetToCommunicationOn_"/>
+    <CheckBox android:id="@+id/check_permission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:checked="true" android:text="@string/_AllowLocationPermission_"/>
+    <TextView android:textSize="12sp" android:id="@+id/text_permission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="@string/_ImprovesWirelessDetection_"/>
+</LinearLayout>

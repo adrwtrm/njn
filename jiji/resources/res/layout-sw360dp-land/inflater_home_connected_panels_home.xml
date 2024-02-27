@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_remote" style="@style/panel_2remote_button_yoko_style"/>
+            <ImageView android:src="@drawable/home_remocon" style="@style/panel_2remote_image_yoko_style"/>
+            <TextView android:text="@string/_Remote_" style="@style/panel_2remote_text_yoko_style"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/panel_mirroring" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_mirroring" style="@style/panel_2button_yoko_style"/>
+            <ImageView android:id="@+id/img_mirroring" android:src="@drawable/home_mirroring" style="@style/panel_2image_yoko_style"/>
+            <TextView android:text="@string/_DeviceScreen_" style="@style/panel_2maintext_yoko_style"/>
+            <TextView android:layout_width="160dp" android:layout_marginRight="16dp" android:text="@string/_OtherAppExplanation_" style="@style/panel_2subtext_yoko_style"/>
+            <Switch android:id="@+id/switch_mirroring" style="@style/panel_mirroring_switch"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_photo" style="@style/panel_button_style"/>
+            <ImageView android:src="@drawable/home_photo" style="@style/panel_image_style"/>
+            <TextView android:text="@string/_Photos_" style="@style/panel_text_style"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_document" style="@style/panel_button_style"/>
+            <ImageView android:src="@drawable/home_document" style="@style/panel_image_style"/>
+            <TextView android:text="@string/_PDF_" style="@style/panel_text_style"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/panel_web" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_web" style="@style/panel_button_style"/>
+            <ImageView android:src="@drawable/home_web" style="@style/panel_image_style"/>
+            <TextView android:text="@string/_Web_" style="@style/panel_text_style"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/panel_camera" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@+id/button_camera" style="@style/panel_button_style"/>
+            <ImageView android:src="@drawable/home_camera" style="@style/panel_image_style"/>
+            <TextView android:text="@string/_Camera_" style="@style/panel_text_style"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

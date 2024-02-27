@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="72dp">
+        <CheckBox android:id="@+id/ckb_list" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:ellipsize="end" android:id="@+id/txt_pjname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="8dp" android:text="@string/_EmptyMessage_" android:singleLine="true"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                <TextView android:textSize="12sp" android:textColor="@color/MaterialSubFont" android:id="@+id/txt_ipaddress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="@color/MaterialSubFont" android:ellipsize="end" android:id="@+id/txt_isUsing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/_Busy_" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center" android:id="@+id/more_info" android:background="@drawable/btn_bg_color" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp" android:layout_marginRight="16dp" android:src="@drawable/icon_pj_info"/>
+    </LinearLayout>
+</LinearLayout>

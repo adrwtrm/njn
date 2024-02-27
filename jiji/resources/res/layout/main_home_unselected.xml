@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/Gray300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ActionBarSeparatorHeight">
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_control_bar" android:background="@color/Gray50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/include_divider_gray300"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/frame_qr" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@+id/button_qr" style="@style/panel_footer_button_style"/>
+                <ImageView android:id="@+id/img_qr" android:src="@drawable/icon_select_qrcode" style="@style/panel_footer_image_style"/>
+                <TextView android:id="@+id/text_qr" android:text="@string/_QRCodeConnection_" style="@style/panel_footer_text_style"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@+id/button_history" style="@style/panel_footer_button_style"/>
+                <ImageView android:src="@drawable/icon_select_history" style="@style/panel_footer_image_style"/>
+                <TextView android:text="@string/_HistoryConnection_" style="@style/panel_footer_text_style"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@+id/button_ip" style="@style/panel_footer_button_style"/>
+                <ImageView android:src="@drawable/icon_select_ipsearch" style="@style/panel_footer_image_style"/>
+                <TextView android:text="@string/_IPAddress_" style="@style/panel_footer_text_style"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_control_bar">
+        <com.epson.iprojection.ui.common.uiparts.CustomScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/Gray50" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+                    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                    <Switch android:textSize="14sp" android:layout_gravity="center" android:id="@+id/check_select_multi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/_Multiple_"/>
+                </LinearLayout>
+                <include layout="@layout/include_divider_gray300"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dp">
+                    <TextView android:textColor="@color/MaterialSubFont" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginLeft="16dp" android:text="@string/_Projector_"/>
+                    <ProgressBar android:layout_gravity="bottom" android:id="@+id/prg_nowloading" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp"/>
+                </LinearLayout>
+                <com.epson.iprojection.ui.common.uiparts.MesuredListView android:id="@+id/list_Pj_SelectPj" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/view_no_pjlist" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/MaterialHintFont" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/_FoundPjDisplayedHere_"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="8dp"/>
+                <include layout="@layout/include_divider_gray300"/>
+                <TextView android:textColor="@color/MaterialSubFont" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginLeft="16dp" android:text="@string/_Help_"/>
+                <include layout="@layout/inflater_pjselect_list_notfindpj"/>
+                <include layout="@layout/inflater_pjselect_list_support_infomation"/>
+            </LinearLayout>
+        </com.epson.iprojection.ui.common.uiparts.CustomScrollView>
+    </LinearLayout>
+</RelativeLayout>

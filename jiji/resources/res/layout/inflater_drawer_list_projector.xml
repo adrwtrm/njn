@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/DrawerBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="wrap_content" android:layout_height="@dimen/DrawerPreDividerSpace"/>
+    <include layout="@layout/include_drawer_divider"/>
+    <View android:layout_width="wrap_content" android:layout_height="@dimen/DrawerPreDividerSpace"/>
+    <TextView android:textSize="@dimen/DrawerLabelTextSize" android:textColor="@color/DrawerLebel" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/DrawerLabelHeight" android:layout_marginLeft="@dimen/DrawerLabelMarginLeft" android:text="@string/_Projector_"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/moderator_and_userlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/ElevationToolbar">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_moderator" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icon_moderator_actionbar"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_userlock" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icon_userlock_mod"/>
+</LinearLayout>

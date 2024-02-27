@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.epson.iprojection.ui.activities.pjselect.layouts.Profile_layout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/toolbar_profile"/>
+        <TextView android:id="@+id/listFilet_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ListView android:id="@+id/list_Pj_Profile" android:background="#00000000" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/ListLine" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <include layout="@layout/include_drawermenu"/>
+</com.epson.iprojection.ui.activities.pjselect.layouts.Profile_layout>

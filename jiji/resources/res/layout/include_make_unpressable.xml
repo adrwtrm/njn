@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.epson.iprojection.ui.common.uiparts.MakeUnpressableLayer xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/layout_make_unpressable" android:background="#cc000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/MaterialFontWhite" android:gravity="center" android:id="@+id/txt_moderator_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/_CannotPerformOperationsModerator_"/>
+</com.epson.iprojection.ui.common.uiparts.MakeUnpressableLayer>

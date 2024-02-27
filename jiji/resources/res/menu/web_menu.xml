@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_browser_forward" android:title="@string/_Forward_"/>
+    <item android:id="@+id/menu_browser_bookmark" android:title="@string/_Bookmarks_"/>
+    <item android:id="@+id/menu_browser_add_bookmark" android:title="@string/_AddToBookmark_"/>
+    <item android:id="@+id/menu_browser_history" android:title="@string/_History_"/>
+    <item android:id="@+id/menu_browser_reload" android:title="@string/_Reload_"/>
+    <item android:id="@+id/menu_browser_stop" android:title="@string/_Stop_"/>
+</menu>

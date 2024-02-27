@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/style_theme_noab">
+        <include layout="@layout/toolbar_marker"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.epson.iprojection.ui.activities.marker.PaintBackImageView android:id="@+id/img_painter_main_layerLower" android:background="@color/BaseColor" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.epson.iprojection.ui.activities.marker.PaintView android:id="@+id/img_painter_main_layerUpper" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

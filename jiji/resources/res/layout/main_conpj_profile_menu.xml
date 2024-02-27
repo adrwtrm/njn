@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.epson.iprojection.ui.activities.pjselect.layouts.Profile_menu_layout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@color/TitleBarSeparator" android:layout_width="match_parent" android:layout_height="@dimen/ActionBarSeparatorHeight"/>
+        <ListView android:id="@+id/list_Profile_menu" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/ListLine" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <include layout="@layout/include_drawermenu"/>
+</com.epson.iprojection.ui.activities.pjselect.layouts.Profile_menu_layout>

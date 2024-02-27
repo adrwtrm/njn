@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="left" android:orientation="vertical" android:background="@color/DrawerBackground" android:layout_width="@dimen/DrawerWidth" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:clickable="true" android:layout_width="@dimen/DrawerWidth" android:layout_height="@dimen/DrawerHeaderHeight">
+        <TextView android:textSize="20sp" android:textColor="@color/MaterialFontWhite" android:gravity="bottom" android:layout_gravity="left" android:id="@+id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_FullApplicationName_" android:layout_marginStart="@dimen/DrawerIconMarginLeft" android:elegantTextHeight="false"/>
+    </LinearLayout>
+    <include layout="@layout/include_drawer_divider"/>
+    <ListView android:id="@+id/list_drawermenu" android:background="@color/DrawerBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/DrawerPreDividerSpace" android:divider="@color/DrawerBackground" android:dividerHeight="0dp"/>
+</LinearLayout>

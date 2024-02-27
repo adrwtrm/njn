@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imgWarning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_dialog_alert" android:layout_alignParentLeft="false" android:layout_centerVertical="true" android:contentDescription="@string/_EmptyMessage_"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="left" android:id="@+id/reset_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/_ResetProfile_" android:layout_toRightOf="@+id/imgWarning" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Button android:background="@layout/shape_separator" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_marginBottom="6dp" android:maxWidth="420dp" android:minWidth="260dp"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="left" android:id="@+id/reset_textview" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/_ResetProfileMsg_"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/reset_ok" android:background="@layout/shape_btn_enable" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/_Reset_" android:layout_weight="1" style="@style/button_style"/>
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/reset_cancel" android:background="@layout/shape_btn_common" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/_Cancel_" android:layout_weight="1" style="@style/button_style"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

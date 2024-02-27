@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/Font" android:id="@+id/txt_uuid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="AgentID: " android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <androidx.appcompat.widget.SwitchCompat android:textColor="@color/Font" android:id="@+id/switch_pjlog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="PJログをテストサーバーに送信する\10(設定変更後アプリ強制終了必要)" app:layout_constraintStart_toStartOf="@+id/txt_uuid" app:layout_constraintTop_toBottomOf="@+id/txt_uuid"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

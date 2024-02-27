@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.epson.iprojection.ui.activities.moderator.NumberableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+    <ImageView android:id="@+id/img_back" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/MultiWindowsTextSize" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:scrollHorizontally="true"/>
+        <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="6"/>
+    </LinearLayout>
+    <com.epson.iprojection.ui.activities.moderator.TouchPosGettableImageView android:id="@+id/img_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="6"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <com.epson.iprojection.ui.activities.moderator.PlayBtnView android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_play" android:background="@drawable/play1" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="8dp"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <com.epson.iprojection.ui.activities.moderator.PlayBtnView android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_stop" android:background="@drawable/stop0" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="8dp"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <com.epson.iprojection.ui.activities.moderator.PlayBtnView android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_pause" android:background="@drawable/pause0" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="8dp"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</com.epson.iprojection.ui.activities.moderator.NumberableFrameLayout>

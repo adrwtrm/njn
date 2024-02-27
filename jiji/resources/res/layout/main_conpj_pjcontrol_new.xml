@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewFlipper android:id="@+id/flipper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/web_remocon" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:id="@+id/view_background" android:background="#ff252525" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ProgressBar android:id="@+id/prg_load" android:layout_width="match_parent" android:layout_height="5dp" style="?android:attr/progressBarStyleHorizontal"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/prgress_not_auth_yet" android:layout_width="64dp" android:layout_height="64dp"/>
+        </FrameLayout>
+        <include layout="@layout/main_conpj_pjcontrol_touchpad"/>
+    </ViewFlipper>
+</LinearLayout>

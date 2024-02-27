@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/pen_config_view" android:layout_width="304dp" android:layout_height="wrap_content">
+    <ScrollView android:background="#fafafa" android:layout_width="304dp" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="304dp" android:layout_height="match_parent">
+            <View android:layout_width="wrap_content" android:layout_height="16dp"/>
+            <ImageView android:id="@+id/view_sample_image" android:layout_width="match_parent" android:layout_height="15dp" android:layout_marginBottom="1dp"/>
+            <TextView android:textSize="14sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" android:text="@string/_Color_"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/btn_marker_penColorRed" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorGreen" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorBlue" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorYellow" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/btn_marker_penColorMagenda" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorCyan" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorDarkGreen" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorPink" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/btn_marker_penColorOrange" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorCha" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorBlack" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+                <ImageView android:id="@+id/btn_marker_penColorWhite" android:layout_width="@dimen/PalletPenColorW" android:layout_height="@dimen/PalletPenColorH"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:gravity="center_vertical" android:id="@+id/txt_width" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginTop="16dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+                <com.epson.iprojection.ui.common.uiparts.RepeatButton android:textSize="16dp" android:id="@+id/btn_minus" android:layout_width="38dp" android:layout_height="38dp" android:text="－"/>
+                <SeekBar android:id="@+id/paint_config_width" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.epson.iprojection.ui.common.uiparts.RepeatButton android:textSize="16dp" android:id="@+id/btn_plus" android:layout_width="38dp" android:layout_height="38dp" android:text="＋"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginTop="12dp" android:text="@string/_Transparency_"/>
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radio_group_alpha" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/radio_marker_pen_configNoAlpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:checked="true" android:text="@string/_Opaque_"/>
+                <RadioButton android:id="@+id/radio_marker_pen_configAlpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_Translucent_"/>
+            </RadioGroup>
+            <View android:layout_width="wrap_content" android:layout_height="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

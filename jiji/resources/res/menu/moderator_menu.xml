@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_start_moderator" android:title="@string/_BecomeModerator_"/>
+    <item android:id="@+id/menu_stop_moderator" android:title="@string/_QuitModerator_"/>
+    <item android:id="@+id/menu_disconnect_all" android:title="@string/_QuitSession_"/>
+    <item android:id="@+id/menu_prohibit" android:title="@string/_DenyToUserOperate_"/>
+    <item android:id="@+id/menu_allow" android:title="@string/_AllowToUserOperate_"/>
+    <item android:id="@+id/menu_deliver" android:title="@string/_ShareImage_"/>
+    <item android:icon="@drawable/icon_whats_moderator" android:id="@+id/menu_whats_moderator" android:title="@string/_WhatIsModerator_" android:showAsAction="withText"/>
+</menu>

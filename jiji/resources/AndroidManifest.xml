@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="105" android:versionName="4.0.2" android:installLocation="auto" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="com.epson.iprojection" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="33"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="false"/>
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture"/>
+    <supports-gl-texture android:name="GL_OES_compressed_paletted_texture"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <supports-screens android:xlargeScreens="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/style_theme_noab" android:label="@string/_ApplicationName_" android:icon="@mipmap/ic_launcher" android:name="com.epson.iprojection.ui.common.application.IproApplication" android:multiprocess="true" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="false" android:extractNativeLibs="false" android:usesCleartextTraffic="true" android:resizeableActivity="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <activity android:name="com.epson.iprojection.ui.activities.start.Activity_StartSplash" android:exported="true">
+            <layout android:minWidth="630dp" android:minHeight="450dp" android:defaultWidth="630dp" android:defaultHeight="450dp"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/style_theme.TranslucentStatusBar" android:name="com.epson.iprojection.ui.activities.splash.Activity_Splash" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.mirroring.Activity_IntroMirroring" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.userctrl.Activity_IntroUserCtrl" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.delivery.Activity_IntroDelivery" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.moderator.Activity_IntroModerator" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.wifi.Activity_IntroWifi" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.overlay.Activity_IntroOverlay" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.overlayforopengl.Activity_IntroOverlayForOpenGL" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.Activity_AppVersion" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.DebugSettingActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.fileselect.FileSelectActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.LisenceActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.CopyrightActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.TrademarkActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.terms.Activity_TermsToMain" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme" android:name="com.epson.iprojection.ui.activities.start.Activity_StartFromImplicitIntent" android:exported="true" android:launchMode="singleTask" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/jpg"/>
+                <data android:mimeType="image/png"/>
+                <data android:mimeType="image/x-ms-bmp"/>
+                <data android:mimeType="image/bmp"/>
+                <data android:mimeType="image/gif"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/jpg"/>
+                <data android:mimeType="image/png"/>
+                <data android:mimeType="image/x-ms-bmp"/>
+                <data android:mimeType="image/bmp"/>
+                <data android:mimeType="image/gif"/>
+                <data android:mimeType="application/pdf"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.epson.iprojection.ui.activities.presen.Activity_Presen" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.marker.Activity_Marker" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.marker.permission.PermissionStrageActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.web.Activity_Web" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustPan" android:imeOptions="actionSearch"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.web.menu.bookmark.Activity_Bookmark" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.web.menu.history.Activity_WebHistory" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.support.Activity_SupportEntrance" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.pjselect.Activity_PjSelect" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.epson.iprojection.ui.activities.pjselect.Activity_Other" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.pjselect.history.Activity_PjHistory" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.pjselect.profile.Activity_Profile" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme" android:name="com.epson.iprojection.ui.activities.pjselect.qrcode.permission.PermissionQrCameraActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme.TranslucentStatusBar" android:name="com.epson.iprojection.ui.activities.pjselect.qrcode.views.activities.Activity_QrCamera" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.camera.permission.strage.PermissionStrageActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.remote.Activity_Remote" android:screenOrientation="portrait" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.epson.iprojection.ui.activities.pjselect.settings.Activity_PjSettings" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.moderator.Activity_Moderator" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.support.howto.Activity_HowTo" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.gesturemenu.Activity_IntroGestureMenu" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme_notitle" android:name="com.epson.iprojection.ui.activities.support.intro.notfindpj.Activity_IntroNotFindPj" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.moderator.Activity_Moderator_Thumbnail" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.delivery.Activity_PresenDelivery" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.delivery.Activity_MarkerDelivery" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme" android:name="com.epson.iprojection.ui.activities.camera.permission.camera.PermissionCameraActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.camera.views.activities.Activity_Camera" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme" android:name="com.epson.iprojection.ui.activities.restorewifi.Activity_RestoreWifi"/>
+        <activity android:name="com.epson.iprojection.ui.activities.drawermenu.NotAvailableMirroringActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme" android:name="com.epson.iprojection.ui.activities.start.Activity_StartFromNfc" android:exported="true" android:launchMode="singleTask" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/com.epson.iprojection"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/style_theme" android:name="com.epson.iprojection.ui.activities.pjselect.permission.wificonnection.PermissionLocationActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme" android:name="com.epson.iprojection.ui.activities.pjselect.permission.registration.PermissionLocationActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/style_theme" android:name="com.epson.iprojection.ui.activities.pjselect.permission.audio.PermissionAudioActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:name="com.epson.iprojection.ui.activities.mirroring.MirroringNotificationActivity"/>
+        <activity android:name="com.epson.iprojection.ui.activities.whiteboard.WhiteboardActivity" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.DarkActionBar" android:label="@string/oss_license_title" android:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.DarkActionBar" android:name="com.google.android.gms.oss.licenses.OssLicensesActivity"/>
+        <service android:name="com.epson.iprojection.service.pdf.PdfService" android:exported="false" android:process=".iprojectionpdfservice">
+            <intent-filter>
+                <action android:name="com.epson.iprojection.service.pdf.PdfAidlService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.epson.iprojection.service.mirroring.MirroringService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE | android.permission.BIND_ACCESSIBILITY_SERVICE" android:enabled="true" android:exported="false" android:launchMode="singleInstance" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden|keyboard" android:foregroundServiceType="mediaProjection"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.epson.iprojection.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.epson.iprojection.androidx-startup">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+    </application>
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/style_theme_black" android:orientation="vertical" android:background="@color/backgroundBlack" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="match_parent" android:layout_height="20dp"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_pjctl_power_on" android:padding="0dp" android:layout_width="300dp" android:layout_height="64dp" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_marginRight="15dp" android:layout_marginBottom="12dp" android:scaleType="fitXY" android:text="@string/_TurnOn_" style="@style/PjControlButton"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_pjctl_power_off" android:padding="0dp" android:layout_width="300dp" android:layout_height="64dp" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_marginRight="15dp" android:layout_marginBottom="12dp" android:scaleType="fitXY" android:text="@string/_TurnOff_" style="@style/PjControlButton"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_pjctl_mute_on" android:padding="0dp" android:layout_width="300dp" android:layout_height="64dp" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_marginRight="15dp" android:layout_marginBottom="12dp" android:scaleType="fitXY" android:text="@string/_MuteOn_" style="@style/PjControlButton"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_pjctl_mute_off" android:padding="0dp" android:layout_width="300dp" android:layout_height="64dp" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:layout_marginRight="15dp" android:layout_marginBottom="12dp" android:scaleType="fitXY" android:text="@string/_MuteOff_" style="@style/PjControlButton"/>
+    </LinearLayout>
+</LinearLayout>

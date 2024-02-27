@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <stroke android:width="1dp" android:color="#90000000"/>
+        </shape>
+    </item>
+    <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <gradient android:startColor="@color/BtnFrame_Top" android:endColor="@color/BtnFrame_Btm" android:angle="270" android:type="linear"/>
+        </shape>
+    </item>
+    <item android:left="1dp" android:top="2dp" android:right="1dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <solid android:color="@color/BtnBase_Normal"/>
+        </shape>
+    </item>
+    <item android:left="1dp" android:top="2dp" android:right="1dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <gradient android:startColor="@color/BtnGraTop" android:endColor="@color/BtnGraBtm" android:angle="270" android:type="linear" android:centerColor="@color/BtnGraMdl_A"/>
+        </shape>
+    </item>
+    <item android:left="1dp" android:top="18dp" android:right="1dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="1dp" android:topRightRadius="1dp" android:bottomLeftRadius="4dp" android:bottomRightRadius="4dp"/>
+            <gradient android:startColor="@color/BtnGraMdl_B" android:endColor="@color/BtnGraBtm" android:angle="225" android:type="linear"/>
+        </shape>
+    </item>
+</layer-list>

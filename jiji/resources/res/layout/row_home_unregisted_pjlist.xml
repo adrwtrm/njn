@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/MainFontSize" android:textColor="@color/MaterialFont" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/txt_pjname" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="32dp" android:text="@string/_EmptyMessage_" android:singleLine="true"/>
+    <TextView android:textSize="16dp" android:textColor="@color/MaterialFont" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/txt_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="0dp" android:singleLine="true"/>
+    <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <ImageButton android:layout_gravity="center" android:id="@+id/btn_info" android:paddingLeft="18dp" android:paddingRight="18dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_pj_info" android:contentDescription="@string/_EmptyMessage_" style="@style/topbar_button_style"/>
+</LinearLayout>

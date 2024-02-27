@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/main_qrcode_camera_0" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/style_theme_noab">
+    <LinearLayout android:gravity="center" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.epson.iprojection.ui.activities.pjselect.qrcode.viewmodel.QrTextureView android:id="@+id/qr_surfaceview" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/camera_layout_zoom" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/img_zoomout" android:tag="binding_1" android:background="@drawable/zoomout" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginBottom="8dp" android:contentDescription="@string/_EmptyMessage_" android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/seek_zoom" app:layout_constraintHorizontal_bias="0.8" app:layout_constraintStart_toStartOf="0"/>
+        <androidx.appcompat.widget.AppCompatSeekBar android:gravity="center" android:id="@+id/seek_zoom" android:tag="binding_2" android:layout_width="0dp" android:layout_height="32dp" android:layout_margin="8dp" android:layout_marginBottom="8dp" android:adjustViewBounds="true" android:max="99" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="1" app:layout_constraintWidth_max="240dp"/>
+        <ImageView android:id="@+id/img_zoomin" android:tag="binding_3" android:background="@drawable/zoomin" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginBottom="8dp" android:contentDescription="@string/_EmptyMessage_" android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.2" app:layout_constraintStart_toEndOf="@+id/seek_zoom"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:gravity="top|left" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/img_home_qr_info" android:tag="binding_4" android:background="@android:drawable/ic_dialog_info" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="24dp" android:layout_marginTop="40dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp"/>
+        <ImageView android:id="@+id/img_home_qr_infoback" android:background="@null" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dp">
+        <ImageButton android:gravity="left" android:layout_gravity="center" android:id="@+id/btn_batsu" android:background="#fff" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="4dp" android:src="@drawable/ic_baseline_close_24px"/>
+        <TextView android:textSize="20dp" android:textColor="#000" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:background="#fff" android:padding="4dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_ChangeWiFiNetwork_" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+    </LinearLayout>
+    <View android:background="#1021ab" android:layout_width="match_parent" android:layout_height="3dp"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <Button android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_intro" android:paddingLeft="68dp" android:paddingRight="68dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/_MoveToWiFiSettings_Short_"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/layout_proc" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_proc00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_proc_mu"/>
+    </LinearLayout>
+</LinearLayout>

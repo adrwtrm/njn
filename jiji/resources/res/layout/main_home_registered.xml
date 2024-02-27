@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.epson.iprojection.ui.common.uiparts.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/Gray300" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/ActionBarSeparatorHeight">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/Gray50" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/MaterialSubFont" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginLeft="16dp" android:text="@string/_RegisteredProjectors_"/>
+            <View android:id="@+id/view_divider_up" android:background="@color/Gray300" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <ListView android:id="@+id/listSpoiler" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+            <com.epson.iprojection.ui.common.uiparts.MesuredListView android:id="@+id/listPjs" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+            <View android:id="@+id/view_divider_bottom" android:background="@color/Gray300" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <Button android:textColor="@color/Red500" android:id="@+id/listUnregister" android:background="@drawable/btn_unregister" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layout_panel_root" android:background="@color/Gray300" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</com.epson.iprojection.ui.common.uiparts.CustomScrollView>

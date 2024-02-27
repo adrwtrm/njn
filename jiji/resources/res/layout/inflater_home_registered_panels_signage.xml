@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginRight="4dp">
+    <Button android:id="@+id/button_remote" style="@style/panel_2remote_button_style"/>
+    <ImageView android:src="@drawable/home_remocon" style="@style/panel_2remote_image_style"/>
+    <TextView android:text="@string/_Remote_" style="@style/panel_2remote_text_style"/>
+</FrameLayout>

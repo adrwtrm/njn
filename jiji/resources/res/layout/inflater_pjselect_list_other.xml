@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/adjust_checkbox_view" android:layout_width="32dp" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="9dp" android:layout_marginRight="9dp" android:layout_marginBottom="9dp"/>
+        <TextView android:textSize="18sp" android:textColor="@color/Font" android:id="@+id/fixed_list_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp" android:text="@string/_EmptyMessage_"/>
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="30sp" android:textColor="@color/Font" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="&gt;"/>
+    </LinearLayout>
+    <include layout="@layout/include_list_divider_gray"/>
+</LinearLayout>

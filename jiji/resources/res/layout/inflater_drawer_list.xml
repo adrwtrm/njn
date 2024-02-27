@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_main_icon" android:layout_width="@dimen/DrawerIconWidth" android:layout_height="@dimen/DrawerIconHeight" android:layout_marginLeft="@dimen/DrawerIconMarginLeft" android:layout_marginTop="@dimen/DrawerIconMarginTop" android:layout_marginRight="@dimen/DrawerIconMarginRight" android:layout_marginBottom="@dimen/DrawerIconMarginBottom"/>
+    <TextView android:textSize="@dimen/DrawerTextSize" android:textColor="@color/DrawerFont" android:layout_gravity="center_vertical" android:id="@+id/txt_main_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/DrawerTextMerginLeft" android:layout_marginRight="@dimen/DrawerTextMerginRight"/>
+    <TextView android:textSize="@dimen/DrawerTextSize" android:textColor="@color/DrawerFont" android:layout_gravity="center_vertical" android:id="@+id/txt_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_Selected_"/>
+</LinearLayout>

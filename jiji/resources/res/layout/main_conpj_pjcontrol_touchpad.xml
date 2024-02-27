@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ff252525" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16dp" android:textColor="@color/RemoconFont" android:id="@+id/btn_remote_gesture_menu" android:background="@drawable/selector_remocon_btn_pressed" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="100dp" android:layout_height="48dp" android:layout_marginLeft="4dp" android:layout_marginTop="0dp" android:layout_marginRight="4dp" android:text="@string/_Menu_"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <Button android:textSize="16dp" android:textColor="@color/RemoconFont" android:layout_gravity="right" android:id="@+id/btn_remote_gesture_esc" android:background="@drawable/selector_remocon_btn_pressed" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="100dp" android:layout_height="48dp" android:layout_marginLeft="4dp" android:layout_marginTop="0dp" android:layout_marginRight="4dp" android:text="@string/_Esc_"/>
+    </LinearLayout>
+    <com.epson.iprojection.ui.activities.remote.SwipeCtrlView android:id="@+id/swv_swipeCtrlView" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_swipe_back" android:layout_weight="1"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <Button android:gravity="right" android:layout_gravity="right" android:id="@+id/btn_remote_gesture_hatena" android:background="@drawable/icon_hatena" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</LinearLayout>

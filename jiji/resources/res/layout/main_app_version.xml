@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="36sp" android:textColor="@color/FontSub" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_FullApplicationName_"/>
+        <TextView android:textColor="@color/FontSub" android:gravity="center" android:id="@+id/version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="10sp" android:textColor="@color/FontSub" android:gravity="center" android:id="@+id/txt_copyright" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_Copyright_"/>
+    </LinearLayout>
+</LinearLayout>
